@@ -6,7 +6,7 @@
 
 .Body {
   color: #68B04DD9;
-  font-size: 22px;
+  font-size: 24px;
   max-width: 1450px;
   margin: auto;
 }
@@ -47,8 +47,11 @@ a {
 }
 
 .pre-explanation {
-  margin-left: 25px;
-  margin-right: 25px;
+  /* margin-left: 25px;
+  margin-right: 25px; */
+  max-width: 700px;
+  margin: auto;
+  margin-bottom: 20px;
 }
 
 .Container {
@@ -64,7 +67,7 @@ a {
 }
 
 .box {
-  border-bottom: 2px solid #1C8A43;
+  border-bottom: 2px solid #5d9f46d9;
   margin: 4%;
   padding-left: 4%;
   padding-right: 4%;
@@ -76,7 +79,7 @@ a {
 }
 
 .box-button {
-  border-bottom: 2px solid #1C8A43;
+  border-bottom: 2px solid #5d9f46d9;
   margin: 10px;
   padding: 10px;
   width: calc(300px);
@@ -109,9 +112,9 @@ legend {
 
 button {
   background-color: #FFFFFF;
-  color: #1C8A43;
+  color: #5d9f46d9;
   border-radius: 1px;
-  border-color: #1C8A43;
+  border-color: #5d9f46d9;
   font-family: 'Raleway';
   font-weight: bold;
   font-size: calc(12px + 1.5vh);
@@ -178,7 +181,11 @@ input[type='range']::-webkit-slider-thumb {
 
 .key_info {
   background-color: white;
-  color: #1C8A43;
+  color: #5d9f46d9;
   font-weight: bold;
   padding: 15px;
+}
+.key_info > p {
+  max-width: 700px;
+  margin: auto;
 }

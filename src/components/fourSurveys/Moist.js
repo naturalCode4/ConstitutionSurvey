@@ -18,12 +18,12 @@ function Moist({getScore, moistScore, setMoistScore}) {
     const [surveyQuestions, setSurveyQuestions] = useState(questions)
     // const [score, setScore] = useState([])
     useEffect(() => {
-        setMoistScore(getScore(surveyQuestions, 'damp'))
+        setMoistScore(getScore(surveyQuestions, 'damp/moist'))
     }, [surveyQuestions])
     
     return (
         <div>
-            <h1>Damp Signs</h1>
+            <h1>Damp/Moist Signs</h1>
             <Form
                 surveyQuestions={surveyQuestions}
                 setSurveyQuestions={setSurveyQuestions}
