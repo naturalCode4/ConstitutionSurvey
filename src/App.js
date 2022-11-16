@@ -1,23 +1,37 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
+import logo2 from './healingFromScratch.png'
 import './App.css';
+import Survey from './components/Survey';
+import VanessaInfo from './components/VanessaInfo';
+import KeyInfo from './components/KeyInfo';
 
 function App() {
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
+        <a href="https://www.healingfromscratch.com/" target="_blank">
+        <img src={logo2} className="App-logo" alt="logo"/>
         </a>
+        <p>
+          Constitution Quiz
+        </p>
+        {/* <a
+          className="App-link"
+          href="https://www.healingfromscratch.com/"
+          target="_blank"
+          // rel="noopener noreferrer"
+        >
+          HealingFromScratch.com
+        </a> */}
       </header>
+      <div className="Body">
+        <div className="Container">
+          <Survey/>
+          <KeyInfo/>
+        </div>
+      <VanessaInfo/>
+      </div>
     </div>
   );
 }

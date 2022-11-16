@@ -1,38 +1,156 @@
 .App {
   text-align: center;
+  font-family: 'Raleway';
+  zoom: 80%
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Body {
+  color: #68B04DD9;
+  font-size: 20px
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a {
+  color: #3366CC;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  background-color: white;
+  /* height: 100%; */
+  max-height: calc(50px + 4vmin);
+  /* display: flex; */
+  /* flex-direction: row; */
+  /* justify-content: space-between; */
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: calc(30px + 4vmin);
+  font-weight: bold;
+  color: #5d9f46d9;
+  padding-left: 2%;
+}
+
+.App-logo {
+  height: calc(50px + 16vmin);
+  pointer-events: none;
+  margin-top: -6vmin;
+  position: absolute;
+  left: 8px;
 }
 
 .App-link {
-  color: #61dafb;
+  color: #68B04DD9;
+  font-size: calc(6px + 1.5vmin)
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Container {
+  border: thick double #FFFFFF;
+  margin-left: 1%;
+  margin-right: 1%;
+  background-color: #68B04DD9;
+}
+
+.box {
+  border-bottom: 2px solid #1C8A43;
+  margin: 4%;
+  padding-left: 4%;
+  padding-right: 4%;
+  padding-bottom: 4%;
+  background-color: white;
+  border: thick double #68B04DD9;
+  color: hsl(141, 66%, 33%);
+}
+
+.box-button {
+  border-bottom: 2px solid #1C8A43;
+  margin: 10px;
+  padding: 10px;
+  width: calc(300px);
+  background-color: white;
+  border: thick double #68B04DD9;
+  color: hsl(141, 66%, 33%);
+}
+
+.constitutions {
+  display: flex;
+  justify-content: center;
+  gap: 55px;
+  flex-wrap: wrap;
+}
+
+.constitutions > div {
+  flex: 1;
+  width: 330px;
+}
+
+fieldset {
+  border-color: #68B04DD9;
+  margin-bottom: 10px;
+}
+
+legend {
+  font-size: calc(15px + 1vh);
+}
+
+button {
+  background-color: #FFFFFF;
+  color: #1C8A43;
+  border-radius: 1px;
+  border-color: #1C8A43;
+  font-family: 'Raleway';
+  font-weight: bold;
+  font-size: calc(12px + 1.5vh);
+}
+
+button:hover {
+  background-color: #68B04DD9;
+  color: white;
+  border-color: white;
+  cursor: pointer;
+}
+
+button:active {
+  background-color: #1C8A43;
+}
+
+input[type="range"] {
+  -webkit-appearance: none !important;
+  overflow: hidden;
+  background-color: #fff3e1;
+}
+
+input[type='range']::-webkit-slider-runnable-track {
+  height: 10px;
+  -webkit-appearance: none;
+  color: pink;
+}
+
+input[type='range']::-webkit-slider-thumb {
+  width: 10px;
+  -webkit-appearance: none;
+  height: 10px;
+  cursor: pointer;
+  background: #DFE9AC;
+  border: 1px solid black;
+  box-shadow: -80px 0 0 80px #68B04DD9;
+}
+
+.slider_label {
+  font-size: calc(12px + .8vh);
+  font-weight: bold;
+  color: #68B04DD9;
+}
+
+.slider_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.slider_container > div {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.key_info {
+  color: #187c3b;
+  font-weight: bold;
+  margin: 40px
 }
