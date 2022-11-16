@@ -50,15 +50,18 @@ const getScore = (questions, constitutionType) => {
                     setWarmScore={setWarmScore}
                 />
             </div>
+            <p style={{ color: 'white', marginBottom: '20px', marginLeft: '20px', marginRight: '20px'}}>
+                Your results show how you can stay in balance. It is normal to run higher or lower in certain categories. With this information, you can learn to customize foods and herbs that will be most supportive. However, if you found yourself ranking high in most questions of a category, it is highly recommended to see a health professional.
+            </p>
             <button 
                 className="box"
                 onClick={() => setShowScores(true)}
-                style={{ margin: '0px', padding: '10px', marginBottom: '40px' }}
+                style={{ padding: '15px', }}
             >Get my constitutions</button>
             {showScores &&
                 <Fragment>
-                    <div style={{ padding: '0px', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                         <div style={{ display: 'flex' }}>
+                    <div className="results" style={{ padding: '0px', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                         <div style={{ display: 'flex', flexWrap: 'wrap'}}>
                             <div className="box-button">
                                 <h3>{showScores && dryScore[1]}</h3>
                             </div>
@@ -66,7 +69,7 @@ const getScore = (questions, constitutionType) => {
                                 <h3>{showScores && moistScore[1]}</h3>
                             </div>
                         </div>
-                        <div style={{ display: 'flex' }}>
+                        <div style={{ display: 'flex', flexWrap: 'wrap' }}>
                             <div className="box-button">
                                  <h3>{showScores && coldScore[1]}</h3>
                             </div>

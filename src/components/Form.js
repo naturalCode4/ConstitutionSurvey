@@ -15,10 +15,10 @@ function Form({surveyQuestions, setSurveyQuestions}) {
                     <input type="radio" name={`${surveyQuestion.title}`} id="no" value={0}  /><label for="no">No</label><br/> */}
                     <div className="slider_container">
                         <label className="slider_label" for="slider">0 (never)</label><br/>
-                        <div>
+                        <div classname="slider-container-2">
                             <input className="slider" type="range" name={`${surveyQuestion.title}`} id="slider" min={0} max={100} step={25} value={surveyQuestion.value}/>
                         </div>
-                        <label className="slider_label" for="slider">4 (frequently/severe)</label><br/>
+                        <label className="slider_label" for="slider">4 (frequently / severe)</label><br/>
                     </div>
                 </fieldset>
             ))}

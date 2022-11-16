@@ -10,8 +10,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <a href="https://www.healingfromscratch.com/" target="_blank">
-        <img src={logo2} className="App-logo" alt="logo"/>
+        <a className="App-logo" href="https://www.healingfromscratch.com/" target="_blank">
+          <img className="app-logo-image" src={logo2} alt="logo"/>
         </a>
         <p>
           Constitution Quiz
@@ -26,6 +26,7 @@ function App() {
         </a> */}
       </header>
       <div className="Body">
+        <p className="pre-explanation">A constitution is what tissue state you tend to have. Knowing yours can be helpful in identifying where you may be out of balance. It can also help you choose foods, herbs and supplements that support equilibrium. Answer the following questions to get a percentage of which constitution you may have.</p>
         <div className="Container">
           <Survey/>
           <KeyInfo/>
