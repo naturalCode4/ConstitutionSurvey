@@ -12,10 +12,6 @@ const getScore = (questions, constitutionType) => {
     return [fractionScore, percentScore]
 }
 
-// const getAllScores = () => {
-    
-// }
-
  function Survey() {
 
     const [showScores, setShowScores] = useState(false)
@@ -50,38 +46,33 @@ const getScore = (questions, constitutionType) => {
                     setWarmScore={setWarmScore}
                 />
             </div>
-            <p style={{ color: 'white', marginBottom: '40px', marginLeft: '20px', marginRight: '20px'}}>
+            <p style={{ color: '#1C8A43', maxWidth: '725px', margin: 'auto', paddingLeft: '20px', paddingRight: '20px', marginTop: '40px', marginBottom: '40px' }}>
                 Your results show how you can stay in balance. It is normal to run higher or lower in certain categories. With this information, you can learn to customize foods and herbs that will be most supportive. However, if you found yourself ranking high in most questions of a category, it is highly recommended to see a health professional.
             </p>
             {!showScores && 
-                <button 
-                    className="box"
+                <button
+                    className="box-button"
                     onClick={() => setShowScores(true)}
-                    style={{ padding: '15px', }}
-                >Get my constitutions</button>
+                >Get my constitution</button>
             }
             {showScores &&
-                <Fragment>
-                    <p style={{color: 'white', fontSize: '30px', fontWeight: 'bold'}}>My Constitution:</p>
-                    <div className="results" style={{ padding: '0px', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                         <div style={{ display: 'flex', flexWrap: 'wrap'}}>
-                            <div className="box-button">
+                <div style={{display: 'flex', flexDirection: 'column', margin: 'auto'}}>
+                    <p style={{color: '#1C8A43', fontSize: '48px', fontWeight: 'bold'}}>My Constitution:</p>
+                    <div className="results" style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap', alignItems: 'center' }}>
+                         <div>
+                            <div className="constitution-box">
                                 <h3>{showScores && dryScore[1]}</h3>
-                            </div>
-                            <div className="box-button">
                                 <h3>{showScores && moistScore[1]}</h3>
                             </div>
                         </div>
-                        <div style={{ display: 'flex', flexWrap: 'wrap' }}>
-                            <div className="box-button">
-                                 <h3>{showScores && coldScore[1]}</h3>
-                            </div>
-                            <div className="box-button">
-                             <h3>{showScores && warmScore[1]}</h3>
+                        <div>
+                            <div className="constitution-box">
+                                <h3>{showScores && coldScore[1]}</h3>
+                                <h3>{showScores && warmScore[1]}</h3>
                             </div>
                         </div>
                     </div>
-                </Fragment>
+                </div>
             }
         </Fragment>
     )

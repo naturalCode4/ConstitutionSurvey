@@ -16,15 +16,8 @@ function App() {
         <p>
           Constitution Quiz
         </p>
-        {/* <a
-          className="App-link"
-          href="https://www.healingfromscratch.com/"
-          target="_blank"
-          // rel="noopener noreferrer"
-        >
-          HealingFromScratch.com
-        </a> */}
       </header>
+        <hr></hr>
       <div className="Body">
         <p className="pre-explanation">A constitution is what tissue state you tend to have. Knowing yours can be helpful in identifying where you may be out of balance. It can also help you choose foods, herbs and supplements that support equilibrium. Answer the following questions to get a percentage of which constitution(s) you may have.</p>
         <div className="Container">
