@@ -186,24 +186,28 @@ input[type="range"] {
   -webkit-appearance: none !important;
   overflow: hidden;
   background-color: #ffdba5;
-  height: 16px;
+  height: 25px;
+  border-radius: 5px;
   width: calc(140px + 3vw);
 }
 
 input[type='range']::-webkit-slider-runnable-track {
-  height: 16px;
+  height: 25px;
+  border-radius: 5px;
   -webkit-appearance: none;
   color: pink;
 }
 
 input[type='range']::-webkit-slider-thumb {
-  width: 16px;
+  width: 25px;
   -webkit-appearance: none;
-  height: 16px;
+  height: 25px;
+  border-radius: 3px;
   cursor: pointer;
   background: #DFE9AC;
   border: 2px solid black;
   box-shadow: -90px 0 0 90px #68B04DD9;
+  box-sizing: border-box;
   z-index: 15;
 }
 
