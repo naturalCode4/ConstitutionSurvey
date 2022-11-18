@@ -8,8 +8,8 @@ const getScore = (questions, constitutionType) => {
     const valueArray = questions.map(question => question.value)
     const totalYes = valueArray.reduce((prev, curr) => +prev + +curr, 0) // valueArray contained strings with numbers instead of numbers
     const fractionScore = `${totalYes}/${questions.length} ${constitutionType}`
-    const percentScore = `${Math.round(totalYes/questions.length)} % ${constitutionType} constitution`
-    return [fractionScore, percentScore]
+    const percentScore = `${Math.round(totalYes/questions.length)}% ${constitutionType} constitution`
+    return [fractionScore, percentScore, Math.round(totalYes/questions.length)]
 }
 
  function Survey() {
@@ -62,7 +62,7 @@ const getScore = (questions, constitutionType) => {
                          <div>
                             <div className="constitution-box">
                                 {
-                                    dryScore[1] > moistScore[1] ?
+                                    dryScore[2] > moistScore[2] ?
                                     <Fragment>
                                         <h3 style={{ textAlign: 'left', color: 'goldenrod' }}>{dryScore[1]}</h3>
                                         <h3 style={{ textAlign: 'left', fontWeight: 'normal' }}>{moistScore[1]}</h3>
@@ -78,10 +78,10 @@ const getScore = (questions, constitutionType) => {
                         <div>
                             <div className="constitution-box">
                                 {
-                                    coldScore[1] > warmScore[1] ?
+                                    coldScore[2] > warmScore[2] ?
                                     <Fragment>
                                         <h3 style={{ textAlign: 'left', color: 'goldenrod' }}>{coldScore[1]}</h3>
-                                        <h3 style={{ fontWeight: 'normal' }}>{warmScore[1]}</h3>
+                                        <h3 style={{ fontWeight: 'normal', textAlign: 'left' }}>{warmScore[1]}</h3>
                                     </Fragment>
                                     :
                                     <Fragment>
