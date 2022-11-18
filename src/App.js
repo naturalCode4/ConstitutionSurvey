@@ -19,7 +19,7 @@ function App() {
       </header>
         <hr></hr>
       <div className="Body">
-        <p className="pre-explanation">A constitution is what tissue state you tend to have. Knowing yours can be helpful in identifying where you may be out of balance. It can also help you choose foods, herbs and supplements that support equilibrium. Answer the following questions to get a percentage of which constitution(s) you may have.</p>
+        <p className="pre-explanation">A constitution is what tissue state you tend to have. Knowing yours can be helpful in identifying where you may be out of balance. It can also help you choose foods, herbs and supplements that support equilibrium. Answer the following questions to get percentage scores of your constitution.</p>
         <div className="Container">
           <Survey/>
           <KeyInfo/>

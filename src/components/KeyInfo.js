@@ -14,8 +14,8 @@ function KeyInfo() {
             <p className="left-align" style={{ fontWeight: 'normal' }}><br></br><u style={{ fontWeight: 'bold' }}>WARM/HOT</u><br></br>If your constitution tends towards warm, choose less heating foods and opt for more cooling foods. You can also balance hot foods with a higher ratio of cooling foods.</p>
             <p className="left-align" style={{ fontWeight: 'normal' }}><br></br><u style={{ fontWeight: 'bold' }}>BALANCED</u><br></br>If your constituition tends towards to be fairly balanced, avoid excessive amounts of dry or moist foods and choose a balance of moistening and drying foods.</p>
             <br></br><br></br><br></br>
-            <p className="left-align" style={{ fontWeight: 'normal' }}><u style={{ fontWeight: 'bold' }}>BOTH DRY AND DAMP/MOIST</u><br></br>If you are exhibiting both dry and damp signs, this could indicate a medical condition where dryness and moisture exist in different areas of the body. It is recommended to see a health practitioner.</p>
-            <p className="left-align" style={{ fontWeight: 'normal' }}><br></br><u style={{ fontWeight: 'bold' }}>BOTH COLD AND WARM</u><br></br>If you are exhibiting both cool and warm signs, this could indicate a medical condition where cold and heat exist in different areas of the body. It is recommended to see a health practitioner.</p>
+            <p className="left-align" style={{ fontWeight: 'normal' }}><u style={{ fontWeight: 'bold' }}>BOTH DRY AND DAMP/MOIST</u><br></br>If you are exhibiting both dry and damp/moist signs, this could indicate a medical condition where dryness and moisture exist in different areas of the body. It is recommended to see a health practitioner.</p>
+            <p className="left-align" style={{ fontWeight: 'normal' }}><br></br><u style={{ fontWeight: 'bold' }}>BOTH COOL AND WARM</u><br></br>If you are exhibiting both cool and warm signs, this could indicate a medical condition where cold and heat exist in different areas of the body. It is recommended to see a health practitioner.</p>
             <br></br><br></br>
          </div>
     )
