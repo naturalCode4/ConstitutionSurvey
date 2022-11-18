@@ -61,14 +61,34 @@ const getScore = (questions, constitutionType) => {
                     <div className="results" style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap', alignItems: 'center' }}>
                          <div>
                             <div className="constitution-box">
-                                <h3>{showScores && dryScore[1]}</h3>
-                                <h3>{showScores && moistScore[1]}</h3>
+                                {
+                                    dryScore[1] > moistScore[1] ?
+                                    <Fragment>
+                                        <h3 style={{ textAlign: 'left', color: 'goldenrod' }}>{dryScore[1]}</h3>
+                                        <h3 style={{ textAlign: 'left', fontWeight: 'normal' }}>{moistScore[1]}</h3>
+                                    </Fragment>
+                                    :
+                                    <Fragment>
+                                        <h3 style={{ textAlign: 'left', color: 'goldenrod' }}>{moistScore[1]}</h3>
+                                        <h3 style={{ textAlign: 'left', fontWeight: 'normal' }}>{dryScore[1]}</h3>
+                                    </Fragment>
+                                }
                             </div>
                         </div>
                         <div>
                             <div className="constitution-box">
-                                <h3>{showScores && coldScore[1]}</h3>
-                                <h3>{showScores && warmScore[1]}</h3>
+                                {
+                                    coldScore[1] > warmScore[1] ?
+                                    <Fragment>
+                                        <h3 style={{ textAlign: 'left', color: 'goldenrod' }}>{coldScore[1]}</h3>
+                                        <h3 style={{ fontWeight: 'normal' }}>{warmScore[1]}</h3>
+                                    </Fragment>
+                                    :
+                                    <Fragment>
+                                        <h3 style={{ textAlign: 'left', color: 'goldenrod' }}>{warmScore[1]}</h3>
+                                        <h3 style={{ textAlign: 'left', fontWeight: 'normal' }}>{coldScore[1]}</h3>
+                                    </Fragment>
+                                }
                             </div>
                         </div>
                     </div>
