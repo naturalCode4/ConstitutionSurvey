@@ -15,7 +15,7 @@ function LinkButtons() {
             <button
                 onClick={() => openInNewTab('https://healingfromscratch.wufoo.com/forms/m161wbdq1pgmfsx/')}
                 className="two-buttons"
-            >Fill out an inquiry</button>
+            >Get a Consultation</button>
         </div>
     )
 }

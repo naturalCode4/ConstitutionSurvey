@@ -19,6 +19,9 @@ const getScore = (questions, constitutionType) => {
     const [moistScore, setMoistScore] = useState([])
     const [coldScore, setColdScore] = useState([])
     const [warmScore, setWarmScore] = useState([])
+
+    // let something = new HashSet()
+    // something.add(1)
     
     return (
         <Fragment>

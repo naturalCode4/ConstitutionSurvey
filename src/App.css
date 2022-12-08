@@ -248,6 +248,12 @@ input[type='range']::-webkit-slider-thumb {
   margin: auto;
 }
 
+.key_info > ul {
+  max-width: 450px;
+  margin: auto;
+}
+
+
 .left-align {
   text-align: left;
 }
